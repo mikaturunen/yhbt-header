@@ -9,6 +9,7 @@
   "moduleType": [
     "es6"
   ],
+  "main": "",
   "keywords": [
     "yhbt",
     "header",
@@ -24,5 +25,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    
+  }
 }
