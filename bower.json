@@ -1,0 +1,28 @@
+{
+  "name": "yhbt-header",
+  "version": "0.0.1",
+  "homepage": "https://github.com/mikaturunen/yhbt-header",
+  "authors": [
+    "Mika Turunen <mika.turunen@ymail.com>"
+  ],
+  "description": "Header component for You Have Been Tasked!",
+  "moduleType": [
+    "es6"
+  ],
+  "keywords": [
+    "yhbt",
+    "header",
+    "polymer",
+    "component",
+    "webcomponents",
+    "typescript"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
