@@ -51,7 +51,7 @@ gulp.task(taskTslintClient, function() {
 
 var taskJade = "jade";
 gulp.task(taskJade, function() {
-    return gulp.src(jadeLocation).pipe(jade()).pipe(gulp.dest(path.join(tmpLocation, "/frontend")));
+    return gulp.src(jadeLocation).pipe(jade()).pipe(gulp.dest(tmpLocation));
 });
 
 var taskTscClient = "ts-client";
@@ -69,15 +69,8 @@ gulp.task(taskTscClient, function() {
         }));
 
     return eventStream.merge(
-        tsc.js.pipe(gulp.dest(path.join(tmpLocation, "/frontend")))
+        tsc.js.pipe(gulp.dest(tmpLocation))
     );
-});
-
-// TODO update compilation steps for client side
-var taskCopyClient = "copy-client";
-gulp.task(taskCopyClient, function() {
-    return gulp.src("./frontend/**/*.*")
-        .pipe(copy(tmpLocation));
 });
 
 var taskCopyToReleaseLocation = "copy";
