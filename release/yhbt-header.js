@@ -1,4 +1,7 @@
 Polymer({
     is: "yhbt-header",
-    properties: {}
+    properties: {},
+    loggedIn: function (element, detail, sender) {
+        console.log("test", element, detail, sender);
+    }
 });

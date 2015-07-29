@@ -10,6 +10,10 @@ dom-module(id="yhbt-header")
                 div    
                     span You Have Been Tasked
                 div 
-                    polymer-login(login-route="/login" logout-route="/logout")
+                    polymer-login(
+                        login-route="/login" 
+                        logout-route="/logout"
+                        on-login="loggedIn"
+                        on-logout="loggedOut")
                     
     script(src="./yhbt-header.js")

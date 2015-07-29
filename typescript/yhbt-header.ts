@@ -10,5 +10,9 @@ Polymer({
      */
     properties: {
 
+    },
+
+    loggedIn: function(element: any, detail: any, sender: any) {
+        console.log("test", element, detail, sender);
     }
 });
